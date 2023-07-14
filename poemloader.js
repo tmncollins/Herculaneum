@@ -23,10 +23,11 @@ function readTextFile(file)
     return allText;
 }
 
-function load_poem(title) 
+function load_poem(file, title) 
 {
-	var poem = readTextFile("poems/" + title + ".txt");
+	var poem = readTextFile("poems/" + file + ".txt");
 	const myArray = poem.split("\n");
 	poem = myArray.join("<br>");
-    	document.getElementById("poem").innerHTML = poem;	
+	title = "<h1>" + title + "</h1>"; 
+    	document.getElementById("poem").innerHTML = title + "<br><br>" + poem;	
 }
