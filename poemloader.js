@@ -26,5 +26,7 @@ function readTextFile(file)
 function load_poem(title) 
 {
 	var poem = readTextFile("poems/" + title + ".txt");
+	const myArray = poem.split("\n");
+	poem = myArray.join("<br>");
     	document.getElementById("poem").innerHTML = poem;	
 }
