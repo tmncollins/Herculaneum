@@ -25,8 +25,6 @@ function readTextFile(file)
 
 function load_poem(title) 
 {
-	alert("Hello! I am an alert box!!");
-
 	var poem = readTextFile("poems/" + title + ".txt");
     	document.getElementById("poem").innerHTML = poem;	
 }
