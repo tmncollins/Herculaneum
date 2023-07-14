@@ -1,4 +1,4 @@
-I like to go out
+I like to go out \n
 At night and look up
 At the stars which hang
 Motionless against
